@@ -4,15 +4,17 @@
       <div class="col">
         <nav class="navbar-toggler navbar-expand-md fixed-top">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
-            <span class="navbar-toggle-icon" style="color: purple;">
+            <span class="navbar-toggle-icon" style="color: lightseagreen">
               &#9776;
             </span>
             <a href="#" class="navbar-brand">
-              <i class="fa fa-home" style="font-size: 1em; color: purple;"></i>
+              <i class="fa fa-home" style="font-size: 1em; color: lightseagreen;"></i>
             </a>
             <div class="collapse navbar-collapse" id="navigation-bar">
               <ul class="navbar ml-auto">
                 <li class="nav-item"><a href="#statistic">STATISTICS</a></li>
+              </ul>
+              <ul class="navbar ml-auto">
                 <li class="nav-item"><a href="#footer">CONTACT</a></li>
               </ul>
             </div>
@@ -26,12 +28,12 @@
 <section id="header">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1 class="h1-title">[ Corona ]</h1>
+      <div class="col" style="margin-top: 300px;">
+        <h1 class="h1-title" style="font-family: Arial, Helvetica, sans-serif; font-style: oblique;">COVID-19 CASES TRACKER</h1>
         <p class="text-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error rerum nesciunt voluptas, corrupti quia minima
-          tempore voluptatibus in aperiam. Quas soluta sequi esse eius, repudiandae fuga doloribus praesentium quos
-          minima!
+          Corona currently has almost the whole world on it's knees. Us non medical practitioners have little to none that
+          we can do to develop a vaccine, but what we can do, is abiding to the regulations set out by the people that can.
+          Luckily, we can also keep track of how the numbers are looking. A subtle scroll down will present you with the most recent numbers
         </p>
       </div>
     </div>
@@ -40,16 +42,11 @@
 
 <section id="statistic">
   <div class="container text-center">
-    <div class="row">
-      <div class="col text-left">
-        <h2>STATISTICS</h2>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col text-center mb-3">
         <form action="">
-          <select (change)="countryChanged($event.target.value)" name="" id="country" class="form-control">
+          <select style="text-align-last:center;" (change)="countryChanged($event.target.value)" name="" id="country" class="form-control">
             <option selected value="global">Global</option>
             <option value="South Africa">South Africa</option>
             <option *ngFor="let country of countries" value="{{ country }}">{{ country }}</option>
@@ -117,42 +114,27 @@
 <section id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md8 col-sm-6">
+      <div class="">
         <h3>About Me</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, tempore at? Minus deleniti doloribus
-          perferendis ipsum eum natus quia officiis labore tenetur magni. Culpa sequi qui, perferendis eveniet maiores
-          nobis?
+          Thabiso is a Front End Developer Intern at LoadBox in Umhlanga.
+          With a diploma in ICT in Applications Development. Currently he is enrolled in the Advanced Diploma in ICT at the Durban University of Technology, with the prospect of graduating in the next upcoming year.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, ex. Nam expedita inventore numquam animi
-          ducimus adipisci delectus architecto at ab! Iste atque fugiat et soluta id. Quos, soluta sapiente.
+          When it comes down to development, he is skilled in a range of programming languages, but believes the ability to be a good programmer does not solely lie on the amount of languages one can code in, but rather the logic behind the syntax.
+          C#, TypeScript and Python are the languages he finds comfort in.
+          Skilled in the Angular framework for front end development.
         </p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
+        <p>
+          Currently finding intgerest in Machine and Deep Learning. A number of certificates already under his belt
+        </p>
+
       </div>
+
+    </div>
+    <div class="row">
       <div class="col-md-4 col-sm-6">
-        <h3>Keep in touch</h3>
+        <h3 style="margin-left: 20px;">Keep in touch</h3>
         <ul class="list-unstyle">
           <li>
             <p><strong><i class="fa fa-map-marker-alt"></i>Address: </strong>Location, street, code</p>
@@ -162,6 +144,28 @@
           </li>
           <li>
             <p><strong><i class="fa fa-phone"></i>Phone: </strong>+27 65 720 3023</p>
+          </li>
+        </ul>
+        <ul style="margin-left: 15px;" class="list-inline">
+          <!-- <li class="list-inline-item">
+            <a href="">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li> -->
+          <li class="list-inline-item">
+            <a href="https://twitter.com/ZakoMthiya">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/zakomthiya/?hl=en">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/mtsharethabiso">
+              <i class="fa fa-linkedin"></i>
+            </a>
           </li>
         </ul>
       </div>

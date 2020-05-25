@@ -15,18 +15,28 @@ body, html {
   font-family: 'Alegreya Sans', sans-serif;
 }
 #navigation .navbar a {
-  color: purple;
+  color: lightseagreen;
 }
 #navigation .navbar a:hover {
   color: #dedede;
 }
 #header {
-  background: url('src/assets/images/corry.jpg') center center no-repeat;
+  background: url('src/assets/images/cor.jpg') center center no-repeat;
   background-size: cover;
   height: 100%;
-  color: purple;
+  color: lightseagreen;
   display: flex;
   align-items: center;
+}
+/* #footer {
+  background: url('src/assets/images/mid.jpg') center center no-repeat;
+  background-size: cover;
+  color: lightseagreen;
+  display: flex;
+  align-items: center;
+} */
+#graph {
+  margin-bottom: 30px;
 }
 #header .h1-title {
   text-align: center;
@@ -58,11 +68,11 @@ body, html {
 
 #footer {
   padding: 2rem 0;
-  background-color: #aaaaaa;
-  color: #eeeeee;
+  background-color: #aaaaaa75;
+  color: #6b6b6b;
 }
 #footer a {
-  color: purple;
+  color: lightseagreen;
 }
 #footer a:hover {
   color: #ffffff;
