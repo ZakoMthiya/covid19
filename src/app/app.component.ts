@@ -9,7 +9,7 @@ import { ApiService } from './api/api.service';
 })
 export class AppComponent {
 
-  global: boolean;
+  global: boolean = false;
   country: string;
   data: GlobalModel;
   dailyData: any[];
@@ -41,8 +41,8 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-   this.global = true;
-   this.fetchData();
+  //  this.global = true;
+   this.fetchDataByCountry('South Africa');
    this.fetchCountries();
    this.fetchDailyData();
   }
